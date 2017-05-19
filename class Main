@@ -25,5 +25,6 @@ public class Main {
         }
         Collections.sort(profiles);
         profiles.stream().forEach(buku ->
+        System.out.println(buku.getNama()));
     }
 }
