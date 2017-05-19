@@ -1,0 +1,34 @@
+class Profile implements Comparable <Profile>{
+
+    private String nama,email;
+
+    public Profile(){
+        this.nama = "";
+        this.email = "";
+    }
+
+    public Profile(String nama, String email){
+        setNama(nama);
+        setEmail(email);
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    @Override
+    public int compareTo(Profile p) {
+        return 1;
+    }
+}
