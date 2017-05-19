@@ -29,6 +29,8 @@ class Profile implements Comparable <Profile>{
     }
     @Override
     public int compareTo(Profile p) {
+        if(nama.compareTo(p.getNama()) < 0) return -1;
+        if(nama.compareTo(p.getNama()) ==0) return 0;
         return 1;
     }
 }
