@@ -23,5 +23,6 @@ public class Main {
         for(Circle c:group.values()){
             System.out.println("nama :"+c.getProfile());
         }
+        Collections.sort(profiles);
     }
 }
