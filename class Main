@@ -1,0 +1,27 @@
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<Profile> profiles = new ArrayList<>();
+        ArrayList<Circle> circles = new ArrayList<>();
+        profiles.add(new Profile("Andi ","andi12@gmail.com"));
+        profiles.add(new Profile("Ahmad","ahmad22@gmail.com"));
+        profiles.add(new Profile("Yoga","yoga@gmail.com"));
+        profiles.add(new Profile("Citra","citra4235@gmail.com"));
+        profiles.add(new Profile("Nurhayati","nur9834@gmail.com"));
+        profiles.add(new Profile("Joni","joni_joni987@gmail.com"));
+        profiles.add(new Profile("Lukman","lukman999@gmail.com"));
+        profiles.add(new Profile("Syahdan","syahdan823@gmail.com"));
+        profiles.add(new Profile("Fitri","fitri3232@gmail.com"));
+        profiles.add(new Profile("Dinda","dinda2311@gmail.com"));
+        profiles.add(new Profile("Fahmi","fahmi9876@gmail.com"));
+        profiles.add(new Profile("Didit","didit0983@gmail.com"));
+        profiles.add(new Profile("Brian","brian9847@gmail.com"));
+
+        HashMap<String, Circle> group = new HashMap<>();
+        group.put("teman kampus",new Circle(profiles.get(1), profiles.get(0), profiles.get(2), profiles.get(3)));
+        group.put("teman jurusan",new Circle(profiles.get(4), profiles.get(5), profiles.get(6), profiles.get(7)));
+        for(Circle c:group.values()){
+            System.out.println("nama :"+c.getProfile());
+        }
+    }
+}
